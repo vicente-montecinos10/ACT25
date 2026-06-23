@@ -46,3 +46,12 @@ def mostrar(patente):
     else:
         print("patente no encontrada")
 
+#6.- listar vehiculos con iva
+def listarConIva():
+    if len(vehiculos)>0:
+        print(f"{"N° "} {"patente":<8}{"tipo":<10}{"anio":<6} ${"precio":<10}")
+        for i in range (len(vehiculos)):
+            print(f"{i+1} {vehiculos[i]["patente"]:<8}{vehiculos[i]["tipo"]:<10}{vehiculos[i]["anio"]:<6} ${vehiculos[i]["precio"]:<10}")
+    else:
+        print("no hay vehiculos registrados")
+        

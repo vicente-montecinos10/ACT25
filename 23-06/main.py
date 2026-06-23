@@ -25,12 +25,12 @@ while True:
                 precio = int(input("ingrese precio $"))
                 agregar(patente,tipo,anio,precio)
             case 2: 
-                patente = input("ingrese patente : ").strip()
+                patente = input("ingrese patente : ").upper().strip()
                 mostrar(patente)
             case 3: pass
             case 4: pass
             case 5: pass
-            case 6: pass
+            case 6: listarConIva()
             case 7: pass
             case _: print("no valido")
     except Exception as e:
