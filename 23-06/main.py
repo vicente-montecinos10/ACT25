@@ -24,8 +24,9 @@ while True:
                 anio = int(input("ingrese año (2015-2026) : "))
                 precio = int(input("ingrese precio $"))
                 agregar(patente,tipo,anio,precio)
-
-            case 2: pass
+            case 2: 
+                patente = input("ingrese patente : ").strip()
+                mostrar(patente)
             case 3: pass
             case 4: pass
             case 5: pass
@@ -34,9 +35,3 @@ while True:
             case _: print("no valido")
     except Exception as e:
         print(f"error {e}")
-
-
-
-
-
-
